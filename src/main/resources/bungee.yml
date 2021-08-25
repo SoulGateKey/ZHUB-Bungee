@@ -1,0 +1,4 @@
+name: ZHUBBungee
+version: '${project.version}'
+main: fun.zcraft.sgk.zhubbungee.ZHUBBungee
+description: A lite plugin to let players use /hub or /lobby to teleport the lobby server! This is the BungeeCord version.

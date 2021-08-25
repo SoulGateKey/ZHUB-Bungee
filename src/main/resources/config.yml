@@ -1,0 +1,11 @@
+#ZHUB-Bungee Config
+#Version = 1.0.5
+
+
+
+#Set the prefix of messages
+Prefix: "[&eZHUB&r]"
+
+
+#Set the main lobby
+Hub: "Lobby"
