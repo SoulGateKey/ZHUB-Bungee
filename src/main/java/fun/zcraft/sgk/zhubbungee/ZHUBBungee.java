@@ -1,9 +1,13 @@
 package fun.zcraft.sgk.zhubbungee;
 
+import fun.zcraft.sgk.zhubbungee.Commands.hubCommand;
 import fun.zcraft.sgk.zhubbungee.Commands.reloadCommand;
 import fun.zcraft.sgk.zhubbungee.Stats.Metrics;
 import fun.zcraft.sgk.zhubbungee.Utils.ColorUtil;
 import net.md_5.bungee.api.CommandSender;
+import net.md_5.bungee.api.chat.BaseComponent;
+import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
@@ -20,7 +24,8 @@ public final class ZHUBBungee extends Plugin {
     @Override
     public void onEnable() {
         instance = this;
-        getProxy().getPluginManager().registerCommand(this,new reloadCommand());
+        getProxy().getPluginManager().registerCommand(this, new reloadCommand());
+        getProxy().getPluginManager().registerCommand(this, new hubCommand());
         saveDefaultConfig();
         reloadConfig();
         getLogger().info("ZHUB-Bungee has enabled successfully.");
@@ -48,6 +53,7 @@ public final class ZHUBBungee extends Plugin {
             }
         }
     }
+
     public void reloadConfig() {
         File file = new File(getDataFolder(),"config.yml");
         try {
@@ -55,9 +61,6 @@ public final class ZHUBBungee extends Plugin {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String h = getConfig().getString("Hub");
-        sender.sendMessage("ZHUB-Bungee config.yml has reloaded successfully.");
-        sender.sendMessage("The Hub server now is §a" + h);
     }
     public void saveConfig() {
         File file = new File(getDataFolder(),"config.yml");

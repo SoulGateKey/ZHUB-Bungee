@@ -1,4 +1,5 @@
 # User-specific stuff
+<<<<<<< HEAD
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -37,6 +38,13 @@
 *.iml
 *.ipr
 
+=======
+.idea/
+
+*.iml
+*.ipr
+*.iws
+>>>>>>> ff3bcccc7ff9c40df2606fc8e03a3be4825b1fa6
 
 # IntelliJ
 out/
