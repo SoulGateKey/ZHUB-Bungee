@@ -3,8 +3,8 @@
 
 
 
-#Set the prefix of messages
-Prefix: "[&eZHUB&r]"
+#Set the prefix of messages (warn:not support now)
+Prefix: "[&eZHUB&r]" 
 
 
 #Set the main lobby
