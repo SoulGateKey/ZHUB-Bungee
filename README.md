@@ -9,16 +9,13 @@ It can send player to the main lobby by using /hub or /lobby just like Hypixel o
 And you can set the weight of several lobbys to let player teleport the lobby hierarchically.  
 (Such as when you in bedwars game,use /hub to teleport the bedwars lobby.Use /hub agagin to teleport the main lobby.)
 - - - 
-## Realized 
-1. Support to reload by command. 
-2. Custom hub server name.
-
-## TODO 
-1. Teleport players to lobby.
-2. Add bstats.
-3. Custom Prefix.
-4. Custom weight and several lobbys support.  
-. . . 
+## Realized & TODO
+- [x] Support to reload by command. 
+- [x] Custom hub server name.
+- [x] Teleport players to lobby.
+- [x] Add bstats support.
+- [ ] Custom Prefix & messages. (1.1.0 update)
+- [ ] Custom weight and several lobbys support. (2.0.0 update)
 
 ## Support 
 NONE
